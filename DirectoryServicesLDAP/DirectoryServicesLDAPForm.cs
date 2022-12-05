@@ -104,7 +104,7 @@ namespace DirectoryServicesLDAP
         {
           userName = txtUserName.Text;
           //LDAP aranacak DN bilgisi
-          string dn = "dc=etu";
+          string dn = "dc=abc";
 
           //LDAP injection saldırılarını önlemek için LDAP arama filtresinden çıkarma
           userName = EscapeLdapSearchFilter(userName);
