@@ -18,6 +18,7 @@ namespace DirectoryServicesLDAP
     private string userName;
     private string userDNInfo;
 
+    //LDAP Admin Bağlanma Yönetimi
     private void isAdminConnect_Click(object sender, EventArgs e)
     {
       bool isAdminLdapConnect = isAdminConnectDAP();
@@ -31,6 +32,7 @@ namespace DirectoryServicesLDAP
       }
     }
 
+    //LDAP Admin Bağlanma
     private bool isAdminConnectDAP()
     {
       bool status = false;
@@ -43,6 +45,7 @@ namespace DirectoryServicesLDAP
 
       try
       {
+        //LDAP Parametre validasyon kontrolü
         if (isAdminValidation(host, portValue, adminUser, adminPass, ldapSecurityMethod))
         {
           int port = int.Parse(comboBoxPort.Text);
@@ -52,6 +55,7 @@ namespace DirectoryServicesLDAP
           _ldapConnectionAdmin.Credential = authAdmin;
           _ldapConnectionAdmin.AuthType = AuthType.Basic;
           _ldapConnectionAdmin.SessionOptions.ProtocolVersion = 3;
+          //Port 636 SSL içindir
           if (port == 636)
           {
             ldapProtocolsSecurityMethod(_ldapConnectionAdmin, ldapSecurityMethod, isDisableCertCheck);
@@ -73,6 +77,7 @@ namespace DirectoryServicesLDAP
       }
     }
 
+    //Admin Bilgi Validasyon İşlemleri
     private bool isAdminValidation(string host, string port, string adminUser, string adminPass, string ldapSecurityMethod)
     {
       if (host == "" || port == "" || adminUser == "" || adminPass == "" || ldapSecurityMethod == "")
@@ -82,6 +87,7 @@ namespace DirectoryServicesLDAP
       return true;
     }
 
+    //Kullanıcı Arama
     private void isThereAUser_Click(object sender, EventArgs e)
     {
       bool isThereUser = isThereAUserValid();
@@ -95,6 +101,7 @@ namespace DirectoryServicesLDAP
       }
     }
 
+    //Kullanıcı Arama
     private bool isThereAUserValid()
     {
       bool status = false;
@@ -142,6 +149,7 @@ namespace DirectoryServicesLDAP
       }
     }
 
+    //Kullanıcı Girişi Doğrulama
     private void isUserLogin_Click(object sender, EventArgs e)
     {
       bool isUserLogin = isUserLoginAuth();
@@ -155,6 +163,7 @@ namespace DirectoryServicesLDAP
       }
     }
 
+    //Kullanıcı Giriş Yönetimi
     private bool isUserLoginAuth()
     {
       bool status = false;
@@ -176,6 +185,7 @@ namespace DirectoryServicesLDAP
       return status;
     }
 
+    //Kullanıcı Giriş Doğrulama
     private bool isUserLoginAuthentication()
     {
       bool status = false;
@@ -219,6 +229,7 @@ namespace DirectoryServicesLDAP
       return status;
     }
 
+    //Kullanıcı Giriş Validasyon İşlemleri
     private bool isUserValidation(string host, string port, string userName, string userPassword, string ldapSecurityMethod)
     {
       if (host == "" || port == "" || userName == "" || userPassword == "" || ldapSecurityMethod == "")
@@ -228,10 +239,12 @@ namespace DirectoryServicesLDAP
       return true;
     }
 
+    //SSL 636 Port Bağlantıları
     private static void ldapProtocolsSecurityMethod(System.DirectoryServices.Protocols.LdapConnection _ldapProtocolsConnection, string ldapSecurityMethod, bool isDisableCertCheck)
     {
       if (ldapSecurityMethod == "ssl")
       {
+        //SSL doğrulamayı geç
         if (isDisableCertCheck)
         {
           _ldapProtocolsConnection.SessionOptions.VerifyServerCertificate += delegate { return true; };
@@ -240,6 +253,7 @@ namespace DirectoryServicesLDAP
       }
       else if (ldapSecurityMethod == "starttls")
       {
+        //SSL doğrulamayı geç
         if (isDisableCertCheck)
         {
           _ldapProtocolsConnection.SessionOptions.VerifyServerCertificate += delegate { return true; };

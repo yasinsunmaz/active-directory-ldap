@@ -72,11 +72,11 @@
       this.groupBoxAdminInfo.Controls.Add(this.txtAdminPassword);
       this.groupBoxAdminInfo.Controls.Add(this.txtHost);
       this.groupBoxAdminInfo.Controls.Add(this.lbl3);
-      this.groupBoxAdminInfo.Location = new System.Drawing.Point(12, 11);
-      this.groupBoxAdminInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxAdminInfo.Location = new System.Drawing.Point(9, 9);
+      this.groupBoxAdminInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxAdminInfo.Name = "groupBoxAdminInfo";
-      this.groupBoxAdminInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxAdminInfo.Size = new System.Drawing.Size(270, 371);
+      this.groupBoxAdminInfo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxAdminInfo.Size = new System.Drawing.Size(202, 301);
       this.groupBoxAdminInfo.TabIndex = 21;
       this.groupBoxAdminInfo.TabStop = false;
       this.groupBoxAdminInfo.Text = "LDAP Admin Bilgileri";
@@ -87,16 +87,16 @@
       this.comboBoxConnectionType.Items.AddRange(new object[] {
             "ssl",
             "starttls"});
-      this.comboBoxConnectionType.Location = new System.Drawing.Point(7, 265);
+      this.comboBoxConnectionType.Location = new System.Drawing.Point(5, 215);
+      this.comboBoxConnectionType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.comboBoxConnectionType.Name = "comboBoxConnectionType";
-      this.comboBoxConnectionType.Size = new System.Drawing.Size(200, 24);
+      this.comboBoxConnectionType.Size = new System.Drawing.Size(151, 21);
       this.comboBoxConnectionType.TabIndex = 12;
       // 
       // lbl5
       // 
       this.lbl5.AutoSize = true;
-      this.lbl5.Location = new System.Drawing.Point(4, 244);
-      this.lbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl5.Location = new System.Drawing.Point(3, 198);
       this.lbl5.Name = "lbl5";
       this.lbl5.Size = new System.Drawing.Size(82, 15);
       this.lbl5.TabIndex = 13;
@@ -107,8 +107,7 @@
       this.chckDisableCertCheck.AutoSize = true;
       this.chckDisableCertCheck.Checked = true;
       this.chckDisableCertCheck.CheckState = System.Windows.Forms.CheckState.Checked;
-      this.chckDisableCertCheck.Location = new System.Drawing.Point(7, 296);
-      this.chckDisableCertCheck.Margin = new System.Windows.Forms.Padding(4);
+      this.chckDisableCertCheck.Location = new System.Drawing.Point(5, 240);
       this.chckDisableCertCheck.Name = "chckDisableCertCheck";
       this.chckDisableCertCheck.Size = new System.Drawing.Size(163, 19);
       this.chckDisableCertCheck.TabIndex = 20;
@@ -121,27 +120,26 @@
       this.comboBoxPort.Items.AddRange(new object[] {
             "389",
             "636"});
-      this.comboBoxPort.Location = new System.Drawing.Point(7, 211);
+      this.comboBoxPort.Location = new System.Drawing.Point(5, 171);
+      this.comboBoxPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.comboBoxPort.Name = "comboBoxPort";
-      this.comboBoxPort.Size = new System.Drawing.Size(200, 24);
+      this.comboBoxPort.Size = new System.Drawing.Size(151, 21);
       this.comboBoxPort.TabIndex = 10;
       // 
       // txtAdminUserName
       // 
-      this.txtAdminUserName.Location = new System.Drawing.Point(7, 50);
-      this.txtAdminUserName.Margin = new System.Windows.Forms.Padding(4);
+      this.txtAdminUserName.Location = new System.Drawing.Point(5, 41);
       this.txtAdminUserName.Name = "txtAdminUserName";
-      this.txtAdminUserName.Size = new System.Drawing.Size(200, 20);
+      this.txtAdminUserName.Size = new System.Drawing.Size(151, 20);
       this.txtAdminUserName.TabIndex = 6;
       // 
       // isAdminConnect
       // 
       this.isAdminConnect.BackColor = System.Drawing.Color.Green;
       this.isAdminConnect.ForeColor = System.Drawing.Color.White;
-      this.isAdminConnect.Location = new System.Drawing.Point(95, 324);
-      this.isAdminConnect.Margin = new System.Windows.Forms.Padding(4);
+      this.isAdminConnect.Location = new System.Drawing.Point(71, 263);
       this.isAdminConnect.Name = "isAdminConnect";
-      this.isAdminConnect.Size = new System.Drawing.Size(168, 28);
+      this.isAdminConnect.Size = new System.Drawing.Size(126, 30);
       this.isAdminConnect.TabIndex = 15;
       this.isAdminConnect.Text = "LDAP Bağlan";
       this.isAdminConnect.UseVisualStyleBackColor = false;
@@ -150,8 +148,7 @@
       // lbl1
       // 
       this.lbl1.AutoSize = true;
-      this.lbl1.Location = new System.Drawing.Point(3, 30);
-      this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl1.Location = new System.Drawing.Point(2, 24);
       this.lbl1.Name = "lbl1";
       this.lbl1.Size = new System.Drawing.Size(103, 15);
       this.lbl1.TabIndex = 5;
@@ -160,8 +157,7 @@
       // lbl2
       // 
       this.lbl2.AutoSize = true;
-      this.lbl2.Location = new System.Drawing.Point(1, 83);
-      this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl2.Location = new System.Drawing.Point(1, 67);
       this.lbl2.Name = "lbl2";
       this.lbl2.Size = new System.Drawing.Size(70, 15);
       this.lbl2.TabIndex = 7;
@@ -170,8 +166,7 @@
       // lbl4
       // 
       this.lbl4.AutoSize = true;
-      this.lbl4.Location = new System.Drawing.Point(4, 191);
-      this.lbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl4.Location = new System.Drawing.Point(3, 155);
       this.lbl4.Name = "lbl4";
       this.lbl4.Size = new System.Drawing.Size(29, 15);
       this.lbl4.TabIndex = 11;
@@ -179,25 +174,22 @@
       // 
       // txtAdminPassword
       // 
-      this.txtAdminPassword.Location = new System.Drawing.Point(7, 103);
-      this.txtAdminPassword.Margin = new System.Windows.Forms.Padding(4);
+      this.txtAdminPassword.Location = new System.Drawing.Point(5, 84);
       this.txtAdminPassword.Name = "txtAdminPassword";
-      this.txtAdminPassword.Size = new System.Drawing.Size(200, 20);
+      this.txtAdminPassword.Size = new System.Drawing.Size(151, 20);
       this.txtAdminPassword.TabIndex = 8;
       // 
       // txtHost
       // 
-      this.txtHost.Location = new System.Drawing.Point(6, 156);
-      this.txtHost.Margin = new System.Windows.Forms.Padding(4);
+      this.txtHost.Location = new System.Drawing.Point(4, 127);
       this.txtHost.Name = "txtHost";
-      this.txtHost.Size = new System.Drawing.Size(200, 20);
+      this.txtHost.Size = new System.Drawing.Size(151, 20);
       this.txtHost.TabIndex = 10;
       // 
       // lbl3
       // 
       this.lbl3.AutoSize = true;
-      this.lbl3.Location = new System.Drawing.Point(2, 136);
-      this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl3.Location = new System.Drawing.Point(2, 110);
       this.lbl3.Name = "lbl3";
       this.lbl3.Size = new System.Drawing.Size(69, 15);
       this.lbl3.TabIndex = 9;
@@ -213,11 +205,11 @@
       this.groupBoxUserInfo.Controls.Add(this.lbl7);
       this.groupBoxUserInfo.Controls.Add(this.txtPassword);
       this.groupBoxUserInfo.Controls.Add(this.isThereAUser);
-      this.groupBoxUserInfo.Location = new System.Drawing.Point(301, 11);
-      this.groupBoxUserInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxUserInfo.Location = new System.Drawing.Point(226, 9);
+      this.groupBoxUserInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxUserInfo.Name = "groupBoxUserInfo";
-      this.groupBoxUserInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxUserInfo.Size = new System.Drawing.Size(502, 371);
+      this.groupBoxUserInfo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxUserInfo.Size = new System.Drawing.Size(376, 301);
       this.groupBoxUserInfo.TabIndex = 22;
       this.groupBoxUserInfo.TabStop = false;
       this.groupBoxUserInfo.Text = "Kullanıcı Bilgileri";
@@ -226,10 +218,9 @@
       // 
       this.isUserLogin.BackColor = System.Drawing.Color.RoyalBlue;
       this.isUserLogin.ForeColor = System.Drawing.Color.White;
-      this.isUserLogin.Location = new System.Drawing.Point(324, 100);
-      this.isUserLogin.Margin = new System.Windows.Forms.Padding(4);
+      this.isUserLogin.Location = new System.Drawing.Point(243, 81);
       this.isUserLogin.Name = "isUserLogin";
-      this.isUserLogin.Size = new System.Drawing.Size(168, 28);
+      this.isUserLogin.Size = new System.Drawing.Size(126, 30);
       this.isUserLogin.TabIndex = 17;
       this.isUserLogin.Text = "Şifreyle Girişi Doğrula";
       this.isUserLogin.UseVisualStyleBackColor = false;
@@ -238,8 +229,7 @@
       // lbl8
       // 
       this.lbl8.AutoSize = true;
-      this.lbl8.Location = new System.Drawing.Point(8, 138);
-      this.lbl8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl8.Location = new System.Drawing.Point(6, 112);
       this.lbl8.Name = "lbl8";
       this.lbl8.Size = new System.Drawing.Size(50, 15);
       this.lbl8.TabIndex = 16;
@@ -247,18 +237,16 @@
       // 
       // txtResult
       // 
-      this.txtResult.Location = new System.Drawing.Point(11, 158);
-      this.txtResult.Margin = new System.Windows.Forms.Padding(4);
+      this.txtResult.Location = new System.Drawing.Point(8, 128);
       this.txtResult.Multiline = true;
       this.txtResult.Name = "txtResult";
-      this.txtResult.Size = new System.Drawing.Size(481, 140);
+      this.txtResult.Size = new System.Drawing.Size(362, 114);
       this.txtResult.TabIndex = 13;
       // 
       // lbl6
       // 
       this.lbl6.AutoSize = true;
-      this.lbl6.Location = new System.Drawing.Point(7, 30);
-      this.lbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl6.Location = new System.Drawing.Point(5, 24);
       this.lbl6.Name = "lbl6";
       this.lbl6.Size = new System.Drawing.Size(54, 15);
       this.lbl6.TabIndex = 0;
@@ -266,17 +254,15 @@
       // 
       // txtUserName
       // 
-      this.txtUserName.Location = new System.Drawing.Point(11, 51);
-      this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
+      this.txtUserName.Location = new System.Drawing.Point(8, 41);
       this.txtUserName.Name = "txtUserName";
-      this.txtUserName.Size = new System.Drawing.Size(200, 20);
+      this.txtUserName.Size = new System.Drawing.Size(151, 20);
       this.txtUserName.TabIndex = 1;
       // 
       // lbl7
       // 
       this.lbl7.AutoSize = true;
-      this.lbl7.Location = new System.Drawing.Point(7, 81);
-      this.lbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.lbl7.Location = new System.Drawing.Point(5, 66);
       this.lbl7.Name = "lbl7";
       this.lbl7.Size = new System.Drawing.Size(32, 15);
       this.lbl7.TabIndex = 2;
@@ -284,20 +270,18 @@
       // 
       // txtPassword
       // 
-      this.txtPassword.Location = new System.Drawing.Point(11, 102);
-      this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+      this.txtPassword.Location = new System.Drawing.Point(8, 83);
       this.txtPassword.Name = "txtPassword";
-      this.txtPassword.Size = new System.Drawing.Size(200, 20);
+      this.txtPassword.Size = new System.Drawing.Size(151, 20);
       this.txtPassword.TabIndex = 3;
       // 
       // isThereAUser
       // 
       this.isThereAUser.BackColor = System.Drawing.Color.DarkOrange;
       this.isThereAUser.ForeColor = System.Drawing.Color.White;
-      this.isThereAUser.Location = new System.Drawing.Point(324, 47);
-      this.isThereAUser.Margin = new System.Windows.Forms.Padding(4);
+      this.isThereAUser.Location = new System.Drawing.Point(243, 38);
       this.isThereAUser.Name = "isThereAUser";
-      this.isThereAUser.Size = new System.Drawing.Size(168, 28);
+      this.isThereAUser.Size = new System.Drawing.Size(126, 30);
       this.isThereAUser.TabIndex = 14;
       this.isThereAUser.Text = "Kullanıcı Var Mı";
       this.isThereAUser.UseVisualStyleBackColor = false;
@@ -309,9 +293,10 @@
       this.statusStripVersion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelCopyright,
             this.toolStripStatusLabelVersion});
-      this.statusStripVersion.Location = new System.Drawing.Point(0, 391);
+      this.statusStripVersion.Location = new System.Drawing.Point(0, 313);
       this.statusStripVersion.Name = "statusStripVersion";
-      this.statusStripVersion.Size = new System.Drawing.Size(818, 26);
+      this.statusStripVersion.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
+      this.statusStripVersion.Size = new System.Drawing.Size(614, 26);
       this.statusStripVersion.TabIndex = 23;
       this.statusStripVersion.Tag = "";
       this.statusStripVersion.Text = "statusStrip1asda";
@@ -330,12 +315,13 @@
       // 
       // DirectoryServicesLDAPForm
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(818, 417);
+      this.ClientSize = new System.Drawing.Size(614, 339);
       this.Controls.Add(this.statusStripVersion);
       this.Controls.Add(this.groupBoxUserInfo);
       this.Controls.Add(this.groupBoxAdminInfo);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "DirectoryServicesLDAPForm";
       this.Text = "DirectoryServices LDAP Kimlik Doğrulama";
       this.groupBoxAdminInfo.ResumeLayout(false);
